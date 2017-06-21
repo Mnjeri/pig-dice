@@ -1,11 +1,25 @@
-#diva{
-	height: 500px;
-	width: 1500px;
+body{
+    margin: auto;
+    padding: 0;
 }
-h1{
-	color: red;
-	text-align: center;
+.header1{
+    color: red;
+    font-size: 3em;
+    text-align: center;
 }
 h2{
-	color: red;
+    text-align: center;
+}
+.p2{
+   margin-left: 35%;
+}
+.center{
+    text-align: center;
+}
+.marg{
+    margin-left: 35%;
+}
+#image{
+	height: 500px;
+	width: 1500px;
 }

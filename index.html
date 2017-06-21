@@ -1,42 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/styles.css">
-<script type="js/jquery.min.js"></script>
-<script type="js/scripts.js"></script>
-	<title>pig dice</title>
+    <meta charset="UTF-8">
+    <title>Pig dice</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
 </head>
-
-<div class="container_fluid">
-<div class="row">
-
-        <img src="img/3.jpeg" id="diva">
-        <body>
-      <div class="container">
-       <div class="row">
-          <div class="col-md-6">
-          <form id="One">
-            <h2>Player A</h2>
-            
-              <button type="submit" id="buttonA">Roll dice</button>
-              <p id="1">Your Result Is</p>
-            </form>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="header1"> LET'S PLAY PIG DICE</h1>
+                <img src="img/3.jpeg" id="image">
             </div>
-
-
-            <div class="col-md-6">
-            
-            <form id="Two">
-            <h2>Player B</h2>
-            
-             </div>
-             <button type="submit" id="buttonB">Roll dice</button>
-             <p id="2">Your Result Is</P>
-             </form>
+            <br/>
+             <br/>
+              <br/>
+            <div class="col-md-5 ">
+                <form id="player1">
+                    <h2>Player 1</h2>
+                    <div class="form-group">
+                        <input id="name1" class="form-control" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" name="submit" class="btn btn-lg btn-warning marg" id="Button">Play Dice</button>
+                    </div>
+                </form>
+                <form id="hold">
+                    <button type="submit" name="submit" class="btn btn-lg btn-danger marg" id="Hold1">Hold</button>
+                </form>
+                <div class="Results">
+                    <h2 id="name11"></h2>
+                    <h4 id="numbers1"></h4>
+                </div>
+                
+            </div>
+            <div class="col-md-2">
+                <div class="center">
+                    <h4 id="player"></h4>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <form id="player2">
+                    <h2 class="p22">Player 2</h2>
+                    <div class="form-group">
+                        <input id="name2" class="form-control" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" name="submit" class="btn btn-lg btn-warning p2" id="Button1">Play Dice</button>
+                    </div>
+                </form>
+                <form id="hold1">
+                    <button type="submit" name="submit" class="btn btn-lg btn-danger p2" id="Hold2">Hold</button>
+                </form>
+                <div class="Results">
+                    <h2 id="name12"></h2>
+                    <h4 id="numbers2"></h4>
+                </div>
+            </div>
         </div>
-      </div> 
-
-
+    </div>
+    
+<script src="js/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
