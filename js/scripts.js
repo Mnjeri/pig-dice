@@ -63,33 +63,33 @@ PlayersB.prototype.winner = function(){
 //User Interface
 $(document).ready(function(){
     //An object for player1
-    var result  = new Players1(0);
+    var result  = new PlayersA(0);
     //An object of player2
-    var result1  = new Players2(0);
+    var result1  = new PlayersB(0);
     $('form#playerOne').submit(function(event){
         event.preventDefault();
         var randomm = Math.floor(Math.random() * 6) + 1;
-        var name1 = $('input#nameOne').val();
+        var name1 = $('input#name1').val();
         
         
         
-        $('#name12').text("Name: " + name1);
+        $('#name11').text("Name: " + name1);
         $('#numbers1').text(result.points);
         
-        result.computeScores(randomm);
+        result.calculateScores(randomm);
         result.winner();
         
         });
     $('form#playerTwo').submit(function(event){
         event.preventDefault();
         var random2 = Math.floor(Math.random() * 6) + 1;
-        var name2 = $('input#nameTwo').val();
+        var name2 = $('input#name2').val();
         
          
-        $('#name14').text("Name: " + name2);
+        $('#name12').text("Name: " + name2);
         $('#numbers2').text(result1.points);
         
-        result1.computeScores(random2);
+        result1.calculateScores(random2);
          result1.winner();
         });
     $('form#hold').submit(function(event){
